@@ -1,38 +1,105 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Jackson's Website</title>
+        <style>  body {
+            background: rgba(124, 10, 126, 0.938);
+            color: rgb(12, 219, 247);
+            padding: 10px;
+            font-family: arial;
+        }
+        #all-contents {
+          max-width: 800px;
+            margin: auto;
+        }
+     
+        /* navigation menu */
+        nav {
+            background: rgb(208, 17, 214);
+           margin: 0 auto;
+            display: flex;
+            padding: 10px;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            color: rgb(33, 233, 240);
+            flex: 1;
+            margin: 0;
+        }
+        #nav-ul {
+            list-style-image: none;
+        }
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(6, 221, 236);
+        }
+     
+        /* main container area beneath menu */
+        main {
+            background: rgb(110, 5, 105);
+            display: flex;
+        }
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+        .sidebar-img {
+            width: 200px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        #interests {
+            border: 4px rgb(187, 13, 144) ridge;
+            padding: 8px;
+        }
+        h2, h3 {
+            margin: 0px;
+        }</style>
+        <tilte>Jackson's Mediocre Website</tilte>
     </head>
-   
-    <body>
-        <div>
-           <h2>
-                <p>Jackson Dugas - Student at DTSMA</p>
-        
-           </h2>
-           <div>
-            <img src="data:image/jpeg;base64,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"
-           
-            </div>
-           <div>
-            <h3> Interest</h3>
-           </div>
-           <div>
-            <ul>
-                <li>Music</li>
-                <li>Sleeping</li>
-                <li>YouTube</li>
-            </ul>
-           </div>
-       
-           
+    <body
+        <!-- All content goes here -->
+        <div id="all-contents">
             <nav>
-                <main>
- 
-                </main>
+                <h1>Jackson's Website</h1>
+                <ul id="nav-ul">
+                    <li class="nav-li">
+                        <a href="index.html"> Home </a>
+                      </li>
+                      <li class="nav-li">
+                        <a href="portfolio.html"> Portfolio </a>
+                      </li>
+                </ul>
             </nav>
+            <main>
+                <!-- Sidebar section -->
+               <div>
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHAByVJrEljHgsGXtm6eLqUuOuJAFC0y9QfobDQZ5KB1qvz8jejRqaY07CHWbX65cBMQk&usqp=CAU">
+               </div>
+               <!-- Content section -->
+               <div>
+                    <h2></h2>
+                    <p></p>
+                <div>
+                    <div>
+                        <h3>Interests</h3>
+                        <ul>
+                            <li>Music</li>
+                            <li>Sleep</li>
+                            <li>Food</li>
+                       
+                        </div>
+                        </ul>
+                    </div>
+               </div>
+            </main>
         </div>
- 
     </body>
 </html>
 
