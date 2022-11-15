@@ -43,6 +43,7 @@
     createCollectable(type.kennedi, 800, 210, 0, 0)
     createCollectable(type.grace, 305, 450, 0, 0)
 
+
     // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
   }
