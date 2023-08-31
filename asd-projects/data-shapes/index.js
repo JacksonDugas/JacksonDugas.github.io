@@ -82,17 +82,21 @@ $(document).ready(function () {
 
   function staticDisplay() {
     // TODO 3-b: call your handleStatic function
-    
+    var currentShape = dataShapes[currentIndex];
+    handleStatic(currentShape);
   }
 
   function goodDisplay() {
     // TODO 4-b: call your handleGood function
-    
+    var currentShape = dataShapes[currentIndex];
+    handleGood(currentShape.color, currentShape.shape, currentShape.repeat);
   }
 
   function badDisplay() {
     // TODO 5-b: call your handleBad function
-    
+    var currentShape = dataShapes[currentIndex];
+    var repeat = currentShape.repeat;
+    handleBad(currentShape, repeat);
   }
 
   /////////////////////////////////////////////////
