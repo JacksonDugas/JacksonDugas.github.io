@@ -45,6 +45,7 @@ $(document).ready(function () {
   }; dataShapes.push(shape);
 
   // TODO 2: add a new property to all data shapes
+  
   for (var i = 0; i < dataShapes.length; i++) {
     var currentShape = dataShapes[i];
 
@@ -71,9 +72,9 @@ $(document).ready(function () {
 
   // TODO 5-a: add a function that handles the bad display type
   function handleBad(data, repeat){
-    repeat +- 1;
+    repeat += 1;
     setBackgroundWithMixed (data, repeat);
-    anmimationDetails.displayType = 3;
+    animationDetails.displayType = 3;
   }
 
   /////////////////////////////////////////////////
